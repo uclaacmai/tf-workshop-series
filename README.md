@@ -41,7 +41,8 @@ If it runs without any errors, then you're good to go!
 #### Windows Installation Instructions
 
 Source to refer: https://www.tensorflow.org/install/install_windows
-If the following version of Python is not installed on your system, install it now: https://www.python.org/downloads/release/python-352/
+
+Install Python 3.5 if it's not currently installed on your computer: https://www.python.org/downloads/release/python-352/
 
 TensorFlow only supports version 3.5.x of Python on Windows. Note that Python 3.5.x comes with the pip3 package manager, which is the program you'll use to install TensorFlow. Note that this means you cannot use Python 2 if you have it installed. 
 
