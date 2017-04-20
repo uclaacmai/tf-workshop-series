@@ -49,9 +49,9 @@ To install tensorflow, issue the following command: ```C:\> pip3 install --upgra
 
 Also issue the following commands for `jupyter` and `matplotlib`. 
 
-```C:\> ```
+```C:\> pip3 install --upgrade jupyter```
 
-```C:\> ```
+```C:\> pip3 install --upgrade matplotlib ```
 
 Next, invoke Python through the terminal:
 
