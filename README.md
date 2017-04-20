@@ -69,8 +69,7 @@ sess = tf.Session()
 print(sess.run(hello))
 ```
 
-
-
+If it runs without errors, you're good to go!
 
   
 
