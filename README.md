@@ -8,17 +8,19 @@ Please complete these tasks before the workshop in order to hit the ground runni
 
 #### Mac & Linux Installation Instructions
  
-Source to refer to: https://www.tensorflow.org/install/install_mac#ValidateYourInstallation
+Source to refer to: https://www.tensorflow.org/install/install_mac
 
 The code in this workshop will be compatible with either Python 3+ or Python 2.7+. 
 
 Check if you have Python (or Python 3) installed on your mac via the terminal: ```python``` or ```$python3```
 
-If you don’t have it installed, run ```$brew install python``` or ```brew install python```
+If you don’t have it installed, run ```$brew install python``` or ```brew install python```. This command may have to be prefaced with the `sudo` keyword. 
 
 If you have Python 2 >=2.7.9 or Python 3 >=3.4 , you will already have `pip` installed. 
 
-Run ```$pip3 install numpy matplotlib tensorflow``` if you are running Python3, otherwise run ```pip install numpy matplotlib tensorflow```. 
+If you don't have one of `pip` or `pip3` installed, run `sudo easy_install pip`. 
+
+Run ```$pip3 install numpy matplotlib tensorflow``` if you are running Python3, otherwise run ```pip install numpy matplotlib tensorflow```. This command may have to be prefaced with the `sudo` keyword. 
 
 If you have installed any of these packages before, make sure to run `pip install [PACKAGE] --upgrade` to ensure that you have the latest version. 
 
