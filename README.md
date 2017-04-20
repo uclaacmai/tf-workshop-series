@@ -20,7 +20,7 @@ If you have Python 2 >=2.7.9 or Python 3 >=3.4 , you will already have `pip` ins
 
 If you don't have one of `pip` or `pip3` installed, run `sudo easy_install pip`. 
 
-Run ```$pip3 install numpy matplotlib tensorflow``` if you are running Python3, otherwise run ```pip install numpy matplotlib tensorflow jupyter```. This command may have to be prefaced with the `sudo` keyword. 
+Run ```$pip3 install numpy matplotlib tensorflow sklearn jupyter``` if you are running Python3, otherwise run ```pip install numpy matplotlib tensorflow jupyter sklearn```. This command may have to be prefaced with the `sudo` keyword. 
 
 If you have installed any of these packages before, make sure to run `pip install [PACKAGE] --upgrade` to ensure that you have the latest version. 
 
@@ -30,6 +30,7 @@ Execute the following Python program:
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
+import sklearn
 hello = tf.constant('Hello, Tensorflow!')
 sess = tf.Session()
 print(sess.run(hello))
@@ -48,11 +49,13 @@ TensorFlow only supports version 3.5.x of Python on Windows. Note that Python 3.
 
 To install tensorflow, issue the following command: ```C:\> pip3 install --upgrade tensorflow```
 
-Also issue the following commands for `jupyter` and `matplotlib`. 
+Also issue the following commands for `jupyter`, `sklearn`, and `matplotlib`. 
 
 ```C:\> pip3 install --upgrade jupyter```
 
 ```C:\> pip3 install --upgrade matplotlib ```
+
+```C:\> pip3 install --upgrade sklearn```
 
 Next, invoke Python through the terminal:
 
