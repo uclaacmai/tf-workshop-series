@@ -25,13 +25,17 @@ b = tf.Variable(tf.zeros([10]))
 # Construct model
 pred = tf.nn.softmax(tf.matmul(x, W) + b) # Softmax
 
-saver = tf.train.Saver()
-
 sess = tf.Session()
-saver.restore(sess, "./model.ckpt")
+new_saver = tf.train.import_meta_graph('./model.ckpt')
+new_saver.restore(sess, tf.train.latest_checkpoint('./'))
+
+# saver = tf.train.Saver()
+
+# sess = tf.Session()
+# saver.restore(sess, "./model.ckpt")
 
 prediction = tf.argmax(pred,1)
-print prediction.eval(feed_dict={x: im_vec}, session=sess)
+print (prediction.eval(feed_dict={x: im_vec}, session=sess))
 
 classification = sess.run(pred, {x: im_vec})
-print classification
+print (classification)

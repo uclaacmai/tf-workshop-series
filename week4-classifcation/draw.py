@@ -1,6 +1,11 @@
 from __future__ import division
 import numpy as np
-from Tkinter import *             # GUI used for displaying drawings
+import sys
+if sys.version_info[0] < 3:
+    from Tkinter import *
+else:
+    from tkinter import *
+#from Tkinter import *             # GUI used for displaying drawings
 from PIL import Image, ImageDraw  # depends on Pillow, used for drawing images
 
 from sklearn.preprocessing import normalize
@@ -10,7 +15,6 @@ from scipy.misc import imresize, imshow, imsave
 
 # convert to numpy matrix (load image)
 # sklearn model.predict
-
 d_size = 500  # draw image size, 500x500 canvas
 f_size = 28   # final image size, want 28x28
 
@@ -53,8 +57,8 @@ class Paint:
         im_arr = (np.array(img)/255)
         im_arr = Paint.bbox(im_arr)
 
-        print im_arr.shape
-        print f_size/max(*im_arr.shape)
+        print (im_arr.shape)
+        print (f_size/max(*im_arr.shape))
         im_arr = imresize(im_arr, size=f_size/max(*im_arr.shape), interp='bicubic')
         im_arr = normalize(im_arr)  # bicubic messes with our normalized values
 
