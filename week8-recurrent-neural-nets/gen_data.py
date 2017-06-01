@@ -3,6 +3,7 @@ import numpy as np
 def gen_data(size=1000000):
     X = np.array(np.random.choice(2, size=(size,)))
     Y = []
+    # generate y with dependencies
     for i in range(size):
         threshold = 0.5
         if X[i-3] == 1:
