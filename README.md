@@ -1,6 +1,6 @@
 # Tensorflow Workshop Series
 
-Code, Slides, &amp; Materials for our Tensorflow Workshop Series
+Code, Slides, &amp; Materials for our Tensorflow Workshop Series, Spring Quarter 2017
 
 ### Getting a Python and Machine Learning Environment Up and Running
 
